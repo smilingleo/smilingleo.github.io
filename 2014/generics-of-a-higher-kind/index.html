@@ -1,0 +1,436 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><link rel="preload" href="/smilingleo/component---src-layouts-index-js-742157258a16cdd4ab2e.js" as="script"/><link rel="preload" href="/smilingleo/component---src-templates-blog-post-js-c0443aac1d724d7a5344.js" as="script"/><link rel="preload" href="/smilingleo/path---2014-generics-of-a-higher-kind-03e1de07326c0d247725.js" as="script"/><link rel="preload" href="/smilingleo/app-5c2132a2a5fb1e73d272.js" as="script"/><link rel="preload" href="/smilingleo/commons-581f82a2f76d1a2b9848.js" as="script"/><title data-react-helmet="true">高种泛型 (Generics of a Higher Kind) - My Blog</title><meta data-react-helmet="true" name="description" content="Sample"/><meta data-react-helmet="true" name="keywords" content="sample, something"/><style id="gatsby-inlined-css">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:112.5%/1.45em georgia,serif;box-sizing:border-box;overflow-y:scroll}*,:after,:before{box-sizing:inherit}body{color:rgba(0,0,0,.8);font-family:georgia,serif;font-weight:400;word-wrap:break-word;-webkit-font-kerning:normal;font-kerning:normal;-ms-font-feature-settings:"kern","liga","clig","calt";-webkit-font-feature-settings:"kern","liga","clig","calt";font-feature-settings:"kern","liga","clig","calt","kern"}img{max-width:100%;margin:0 0 1.45rem;padding:0}h1{font-size:2.25rem}h1,h2{margin:0 0 1.45rem;padding:0;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h2{font-size:1.62671rem}h3{font-size:1.38316rem}h3,h4{margin:0 0 1.45rem;padding:0;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h4{font-size:1rem}h5{font-size:.85028rem}h5,h6{margin:0 0 1.45rem;padding:0;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h6{font-size:.78405rem}hgroup{margin:0 0 1.45rem;padding:0}ol,ul{margin:0 0 1.45rem 1.45rem;padding:0;list-style-position:outside;list-style-image:none}dd,dl,figure,p{margin:0 0 1.45rem;padding:0}pre{padding:0;font-size:.85rem;line-height:1.42;background:rgba(0,0,0,.04);border-radius:3px;overflow:auto;word-wrap:normal;padding:1.45rem}pre,table{margin:0 0 1.45rem}table{padding:0;font-size:1rem;line-height:1.45rem;border-collapse:collapse;width:100%}fieldset{margin:0 0 1.45rem;padding:0}blockquote{margin:0 1.45rem 1.45rem;padding:0}form,iframe,noscript{margin:0 0 1.45rem;padding:0}hr{margin:0 0 calc(1.45rem - 1px);padding:0;background:rgba(0,0,0,.2);border:none;height:1px}address{margin:0 0 1.45rem;padding:0}b,dt,strong,th{font-weight:700}li{margin-bottom:.725rem}ol li,ul li{padding-left:0}li>ol,li>ul{margin-left:1.45rem;margin-bottom:.725rem;margin-top:.725rem}blockquote :last-child,li :last-child,p :last-child{margin-bottom:0}li>p{margin-bottom:.725rem}code,kbd,samp{font-size:.85rem;line-height:1.45rem}abbr,abbr[title],acronym{border-bottom:1px dotted rgba(0,0,0,.5);cursor:help}abbr[title]{text-decoration:none}td,th,thead{text-align:left}td,th{border-bottom:1px solid rgba(0,0,0,.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding:.725rem .96667rem calc(.725rem - 1px)}td:first-child,th:first-child{padding-left:0}td:last-child,th:last-child{padding-right:0}code,tt{background-color:rgba(0,0,0,.04);border-radius:3px;font-family:SFMono-Regular,Consolas,Roboto Mono,Droid Sans Mono,Liberation Mono,Menlo,Courier,monospace;padding:0;padding-top:.2em;padding-bottom:.2em}pre code{background:none;line-height:1.42}code:after,code:before,tt:after,tt:before{letter-spacing:-.2em;content:" "}pre code:after,pre code:before,pre tt:after,pre tt:before{content:""}@media only screen and (max-width:480px){html{font-size:100%}}</style><link rel="stylesheet" href="/css/prettify.css"/><script src="/javascripts/jquery-1.9.0.min.js" type="text/javascript"></script><script src="/javascripts/jquery_plantuml.js" type="text/javascript"></script><script src="/javascripts/prettify.js" type="text/javascript"></script><script src="/javascripts/main.js" type="text/javascript"></script><script>
+              var wsUri = 'ws://smilingleo.herokuapp.com/repl/byWebSocket';
+              window.onload = init;
+              </script></head><body><div id="___gatsby"><div data-reactroot="" data-reactid="1" data-react-checksum="1023085583"><!-- react-empty: 2 --><div style="background:#224466;margin-bottom:1.45rem;" data-reactid="3"><div style="margin:0 auto;max-width:960px;padding:1.45rem 1.0875rem;" data-reactid="4"><h1 style="margin:0;" data-reactid="5"><a style="color:white;text-decoration:none;" href="/smilingleo/" data-reactid="6">Smilingleo&#x27;s Blog</a></h1></div></div><div style="margin:0 auto;max-width:960px;padding:0px 1.0875rem 1.45rem;padding-top:0;" data-reactid="7"><div data-reactid="8"><!-- react-empty: 9 --><div data-reactid="10"><h1 data-reactid="11">高种泛型 (Generics of a Higher Kind)</h1><h3 data-reactid="12">January 08, 2014</h3><div data-reactid="13"><p>译者按语：很多翻译中将Kind和Type都翻译为“类型”，但实际上两者还是有不同的，本文中，将<code>Kind</code>翻译为“种类”，取王侯将相宁有种乎之意，是骨子里的东西。而将<code>type</code>译为“类型”。</p>
+<p>学习函数式语言如果想真正入门，一个不可避免的话题就是monad/monoid，而这些范畴论中的词汇都异常抽象，难于理解，尤其是对于从java领域转过来的同学，在很多FP的基础东西不了解情况下来研究monad就更加的困难，比如高种泛型。</p>
+<p><code>泛型</code> 我们都知道，就是某种类型的泛化（一般化），就是将某些特殊类型进行抽象，抽出一种一般化的类型<code>T</code>。而<code>高种泛型</code>就是在泛型的基础上再进行一次抽象。</p>
+<ul>
+<li>
+<p>First Order Abstraction</p>
+<p>first-order可以理解为”单次抽象“，将特定类型抽象一次，比如类型：<code>T</code>, <code>T</code>是什么？可以是任何具体类型，String，Integer，Date等等，不难发现，这就是Java中的泛型。</p>
+</li>
+<li>
+<p>Higher Order Abstraction</p>
+<p>对应first-order的单次抽象，高阶抽象就是再次抽象，也就是说：在某个东东的抽象上再进行抽象，抽象的抽象。晕了吧！</p>
+</li>
+</ul>
+<p>在继续之前，我们还得熟悉几个概念：</p>
+<ul>
+<li>
+<p>值构造器</p>
+<p>值构造器是一个function / method，接受特定值参数来构造一个特定的值(value)</p>
+<p>值构造器可以有多态：接受不同类型的参数，也可以是抽象abstract的。</p>
+</li>
+<li>
+<p>类型构造器</p>
+<p>类型构造器是一个类型，接受一个特定类型参数来构造一个特定的类型。</p>
+<p>和值构造器一样，类型构造器也可以有多态，这是高阶类型的关键。</p>
+</li>
+</ul>
+<p>先说这么多概念有什么用呢？我们还是先看一个具体的例子。</p>
+<h2>例子：Iterable</h2>
+<p>观察下面代码，我们来玩个找不同的游戏：</p>
+<!-- language:scala -->
+<pre><code>trait Iterable[T] {
+  def filter(p: T => Boolean): Iterable[T]
+  def remove(p: T => Boolean): Iterable[T] = filter(x => !p(x))
+}
+
+trait List[T] extends Iterable[T] {
+  def filter(p: T => Boolean): List[T]
+  override def remove(p: T => Boolean): List[T] = filter(x => !p(x))
+}
+</code></pre>
+<p>看到两段代码有什么不同了吗？什么代码重复了？</p>
+<p>很容易发现：在<code>List[T]</code>中的两个方法主体结构和<code>Iterable[T]</code>中的几乎完全相同，只是返回类型不同，都期望返回自身类型。如果我们能够将返回类型也复用，那是否就可以完全去除这些重复代码呢？</p>
+<h3>通过类型构造器多态来去除重复代码</h3>
+<p>看下面代码：</p>
+<!-- language:scala -->
+<pre><code>trait Iterable[T, Container[X]] {
+  def filter(p: T => Boolean): Container[T]
+  def remove(p: T => Boolean): Container[T] = filter(x => !p(x))
+}
+
+trait List[T] extends Iterable[T, List]
+</code></pre>
+<p>这是怎么做到的？很简单，引入了<strong>类型构造器多态</strong>的概念。上面例子中：<code>Iterable[T, Container[X]]</code>的<code>Iterable</code>是类型构造器，接受两个类型参数，引入多态概念，同样的类型构造器，让其可以接受不同类型的类型参数<code>List</code>。是不是和普通方法多态没什么区别？</p>
+<!-- language:java -->
+<pre><code>public Iterable iterable(T t, Container&#x3C;X> container) { ... }
+public Iterable iterable(T t, List list) { ... }
+</code></pre>
+<p>因为Java的泛型没有类型构造器多态的概念，所以Java泛型无法解决上述重复代码的问题。最多只能将返回类型设为超类Iterable，然后在调用子类实现时将其强制类型转换为具体子类。</p>
+<p>有了上面的例子为上下文，我们再来看两个概念：</p>
+<h3>类型参数、类型成员</h3>
+<ul>
+<li>
+<p>Type Parameter</p>
+<p>类型参数，比如: <code>List[T]</code>，List具有一个类型参数<code>T</code>。这里的List就是一个类型构造器。List[Int]就是这个类型构造器接受类型参数Int之后构造的具体类型。</p>
+</li>
+<li>
+<p>Type Member</p>
+<p>类型成员，比如：<code>trait List { type T }</code></p>
+<p>这里<code>T</code>变成了一个trait的成员（抽象的）。在List子类实现中，指定其具体类型，比如：<code>List { type T = Int }</code>。而这里的类型成员也可能参数化，比如：<code>type Container[T]</code></p>
+<p>注意：这里的List只用来示意，并不是scala中的List实现。</p>
+</li>
+<li>
+<p>Type Parameter Vs. Type Member</p>
+<p>两者很像，只是作用范围和可见性不同:</p>
+<ul>
+<li>参数类型只是被参数化的类型的一部分（local，private）。</li>
+<li>类型变量就和不同变量一样，被封装在整个body中，可以被继承，显式地引用。</li>
+<li>两者可以相互补充。比如类型成员也可以被参数化。</li>
+</ul>
+</li>
+</ul>
+<h2>改进Iteratable</h2>
+<p>对于集合（collection）来说，很多方法，比如：map, flatMap, filter，各有作用，但是其实这些方法都有以下两个共同点：</p>
+<ol>
+<li>遍历一个集合</li>
+<li>产生一个新的集合</li>
+</ol>
+<p>仔细想想，是不是所有的这些操作都满足呢？</p>
+<ul>
+<li>map遍历一个collection，将其中的元素变形为另外类型并产生一个新的集合。</li>
+<li>flatMap遍历一个集合，将集合中元素转换为一个集合，并最后将“集合的集合”拉平，形成一个新的集合。</li>
+<li>filter遍历一个集合，判断是否符合过滤条件，并返回所有符合过滤条件的新的集合。</li>
+</ul>
+<p>找到共同点，我们就可以将其抽象出来，进而达到复用、减少重复代码的目的。对上面两个共同点，我们可以用Iterator和Builder来进行抽象实现。</p>
+<!-- language:scala -->
+<pre><code>// 产生新集合
+trait Builder[Container[X], T] {
+  def +=(ele: T): Unit
+  def finalise(): Container[X]
+}
+// 遍历（迭代）器
+trait Iterator[T] {
+  def next(): T
+  def hasNext(): Boolean
+  def foreach(op: T => Unit): Unit = {
+    while(hasNext()) { op(next()) }
+  }
+}
+</code></pre>
+<p>有了这两点抽象，那我们就可以对Iteratable进行改进：</p>
+<!-- language:scala -->
+<pre><code>// 类型参数Container
+trait Buildable[Container[X]] {
+  // build方法只是返回一个Builder
+  def build[T]: Builder[Container[X], T]
+}
+
+// Iteratable没有类型参数Container
+trait Iteratable[T] {
+  // 类型成员Container
+  type Container[X] &#x3C;: Iteratable[X]
+  def elements: Iterator[T]
+  
+  def mapTo[U, C[X]](f: T => U)(b: Buildable[C]): C[U] = {
+    val buff = b.build[U]
+    val elems = elements
+    while(elems.hasNext) {
+      buff += f(elems.next)
+    }
+    buff.finalise
+  }
+  
+  def filterTo[C[X]](f: T => Boolean)(b: Buildable[C]): C[T] = {
+    val buff = build[T]
+    val elems = elements
+    while(elems.hasNext) {
+      val elem = elems.next
+      if (f(elem)) buff += elem
+    }
+    buff.finalise
+  }
+  
+  def flatMapTo[U, C[X]](f: T => Iterable[U])(b: Buildable[C]): C[U] = {
+    val buff = build[U]
+    val elems = elements
+    while(elems.hasNext) {
+      f(elems.next).elements.foreach(buff += _)
+    }
+    buff.finalise
+  }
+  
+  def map[U](f: T => U)(b: Buildable[Container]): Container[U] = mapTo[U, Container](f)(b)
+  
+  def filterTo(f: T => Boolean)(b: Buildable[Container]) : Container[T] =
+    filterTo[Container](f)(b)
+  
+  def flatMap[U](f: T => Iteratable[U])(b: Buildable[Container]): Container[U] = 
+    flatMapTo[U, Container](f, b)
+    
+}
+</code></pre>
+<p>上面的代码中，我们用<code>Buildable</code>和<code>Iterator</code>将前文提到的两个共同点进行抽象，并在<code>Iteratable</code>的实现中，利用这两个抽象：Curried的参数<code>b: Buildable[C]</code>以及<code>def elements: Iterator[T]</code>抽象方法，分别实现了：<code>map</code>, <code>filter</code>, <code>flatMap</code>。</p>
+<p>而Iteratable的具体实现，只需要具化上面两个抽象就可以了。比如List的实现：</p>
+<!-- language:scala -->
+<pre><code>object ListBuildable extends Buildable[List] {
+  def build[T]: Builder[List, T] = new ListBuffer[T] with Builder[List, T]() {
+    // `+=` 是scala标准库中ListBuffer的方法
+    def finalise(): List[T] = toList
+  }
+}
+
+class List[T] extends Iteratable[T] {
+  type Container[X] = List[X]
+  def elements: Iterator[T] = new Iterator {
+    ......
+  }
+}
+</code></pre>
+<p>有了上面的实现，我们就可以利用scala的另外一个机制：implicit来实现根据类型来自动选择匹配的<code>Buildable</code>了。</p>
+<h3>Scala标准库实现</h3>
+<p>掌握上面的思想，我们回头再看scala标准库中collection的实现机制，就很容易理解了。scala的collection架构正是基于<code>builders</code>和<code>traversals</code>思想实现的。</p>
+<!-- language:scala -->
+<pre><code>package scala.collection.mutable
+class Builder[-Elem, +To] {
+  def +=(elem: Elem): this.type
+  def result(): To
+  def clear(): Unit
+  def mapResult[NewTo](f: To => NewTo): Builder[Elem, NewTo] = ...
+}
+</code></pre>
+<p>可以看出上面的<code>result</code>方法就是：我们例子中的<code>finalise</code>，此外多了<code>clear</code>, <code>mapResult</code>两个方法。</p>
+<p>再看看<code>Buildable</code>的实现：</p>
+<!-- language:scala -->
+<pre><code>package scala.collection.generic
+trait CanBuildFrom[-From, -Elem, +To] {
+  // Creates a new builder 
+  def apply(from: From): Builder[Elem, To] 
+}
+</code></pre>
+<p>在scala中，换了个名字：<code>CanBuildFrom</code>，感觉会更贴切一些（不过从dual的角度就感觉不那么好了）。</p>
+<p>上面的<code>apply</code>就是<code>build</code>只是多了一个参数。</p>
+<p>再来看<code>Iteratable</code>:</p>
+<!-- language:scala -->
+<pre><code>package scala.collection
+class TraversableLike[+Elem, +Repr] {
+  def newBuilder: Builder[Elem, Repr] // deferred
+  def foreach[U](f: Elem => U)        // deferred
+          ...
+  def filter(p: Elem => Boolean): Repr = {
+    val b = newBuilder
+    foreach { elem => if (p(elem)) b += elem }
+    b.result
+  } 
+}
+</code></pre>
+<h3>类型参数 vs. 类型成员</h3>
+<p>在上面的例子中，我们同时使用了类型参数和类型成员。</p>
+<ul>
+<li>Buildable的主要目的是构建某种类型的Container，因此使用类型参数将其显式地暴露给客户端。</li>
+<li>对于Iterable，用户更关心的是其中包含的元素类型，而不是容器(Iterable本身就类似个容器了)，所以我们采用类型成员。</li>
+</ul>
+<h2>关于类型(Type)和种类(Kind)</h2>
+<p>其实中文“类型”在这里很混淆，将英文中的两个词type、kind都翻译为“类型”了，其实是有差别的，我们这里将type翻译为"类型"，kind翻译为"种类"。</p>
+<p>值、特定类型和种类的关系可以从下图中得到解答。</p>
+<p><img src="http://i.stack.imgur.com/K0dwL.jpg" alt="values, types and kinds的关系图"></p>
+<ul>
+<li>特定类型是对某种特定类型的值进行分类，比如Int是对1，2，3，4等值的分类，1，2，3是值，Int是Type(类型)。</li>
+<li>种类是对特定类型的归类，比如对Int, String, List[Int]等类型，我们进行高阶抽象，可以认为这些特定类型都是相同种类的，可以用<code>*</code>来描述。这里<code>*</code>不是用来描述任意值的，而是<em>任意一个特定类型</em>。</li>
+<li>种类<code>K</code>可以是<code>*</code> (看下面定义)，也可以是<code>K → K</code>，其中<code>→</code>是<em>种类构造器</em>，用来构造一个<strong>用于归纳类型构造器的种类</strong>，绕口吧，简单地说就是<code>K → K</code>接受一个种类参数，返回一个新的种类.</li>
+</ul>
+<h3>Kind的定义</h3>
+<pre><code>Kind ::= '*(' Type ',' Type ')' | [id '@' ] Kind '→' Kind
+</code></pre>
+<p><code>*(T, U)</code>种类中<code>T</code>用来描述类型下边界(lower bound)，<code>U</code>为类型上边界(upper bound)。在Scala中，最低边界是<code>Nothing</code>因为它使一切类型的子类，最高边界是<code>Any</code>，它使所有类型的超类。因为我们经常使用upper bound, 所以，我们用<code>*(Nothing, U)</code>，简化为<code>*(U)</code>来描述一个种类，特别地，<code>*(Nothing, Any)</code>可以简化为<code>*</code>。</p>
+<p>上文的几个例子：</p>
+<table>
+<thead>
+<tr>
+<th align="center">Scala 类型定义</th>
+<th align="center">Kind 定义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Container
+[
+X
+]</td>
+<td align="center">*
+ → 
+*</td>
+</tr>
+<tr>
+<td align="center">Pair
+[
+T, U
+]</td>
+<td align="center">*
+ → 
+*
+ → 
+*</td>
+</tr>
+<tr>
+<td align="center">Container
+[
+X
+]
+ &#x3C;: Iterable
+[
+X
+]</td>
+<td align="center">X @ 
+*
+ → 
+*
+(Iterable
+[
+X
+]
+)</td>
+</tr>
+<tr>
+<td align="center">C[X &#x3C;: Ordered
+[
+X
+]
+] &#x3C;: Iterable
+[
+X
+]</td>
+<td align="center">X @ 
+*
+(Ordered
+[
+X
+]
+) → 
+*
+(Iterable
+[
+X
+]
+)</td>
+</tr>
+</tbody>
+</table>
+<p>有了Kind定义，我们就可以通过其进行Kind推导，比如<code>T</code>的种类是<code>X @ K → K'</code>，如果<code>U</code>的Kind是<code>K</code>，那么很简单的通过替换，我们就可以知道<code>T[U]</code>的Kind是<code>K'</code>。</p>
+<h3>子种类Subkinding</h3>
+<p>scala中，我们通过<code>&#x3C;:</code>或者<code>>:</code>来表述两个类型（type）之间的关系。比如：<code>Int &#x3C;: Number</code>。</p>
+<p>对于种类，我们可以重载<code>&#x3C;:</code> and <code>>:</code>，用来描述两个种类之间的关系。比如：<code>*(T, U) &#x3C;: *(T', U')</code>，当且仅当：<code>T' &#x3C;: T</code> AND <code>U &#x3C;: U'</code>时上述关系成立。这个相对容易理解，因为<code>T</code>/<code>T'</code>是类型参数，和方法参数一样，是逆变(contravariance)的。</p>
+<p>scala编译器正是通过应用这些规则来进行type/kind检查的。比如，scala编译器将对下面代码报错：</p>
+<!-- language:scala run -->
+<pre><code>class Iterable[Container[X], T]
+trait NumericList[T &#x3C;: Number] extends Iterable[NumericList, T]
+</code></pre>
+<p>你可以点击<code>run</code>按钮试试，看看编译会出现什么结果。</p>
+<p>之所以报错，是因为<code>Iterable[NumericList, T]</code>的问题。我们可以应用上面学到的subkinding来分析一下。</p>
+<p><code>NumericList[T &#x3C;: Number]</code>的种类是：<code>*(Number) → *</code>，很显然，它必须是<code>Iterable</code>的第一个类型参数<code>NumericList</code>的子种类， 也就是：<code>*(Number) → * &#x3C;: * → *</code>。在<code>→</code>左边的是种类参数，是逆变的(contravariant)，所以这里我们需要：<code>* &#x3C;: *(Number)</code>，但是这显然是不成立的。所以scala编译器会报错：<code>type T's bounds &#x3C;: Number are stricter than type X's declared bounds >: Nothing &#x3C;: Any</code>。</p>
+<p>OK then, how to make it work ? 我们需要引入一个新的类型参数：Bound</p>
+<!-- language:scala run -->
+<pre><code>class Iterable[Container[X &#x3C;: Bound], T &#x3C;: Bound, Bound]
+trait NumericList[T &#x3C;: Number] extends Iterable[NumericList, T, Number]
+</code></pre>
+<p><code>Iterable[Container[X &#x3C;: Bound], T &#x3C;: Bound, Bound]</code>的种类是：<code>*(Bound) → * → *(Bound) → * → *</code></p>
+<p><code>NumericList[T &#x3C;: Number]</code>的种类是：<code>*(Number) → *</code>，该种类必须是<code>Iterable</code>第一个参数的子种类，也就是：<code>*(Number) → * &#x3C;: *(Bound) → *</code>，而<code>Bound</code>已经指定为<code>Number</code>，经过替换，就有了：<code>*(Number) → * &#x3C;: *(Number) → *</code>，左右两边相同，自然是满足要求了。</p>
+<h3>高种类型</h3>
+<p>如果你使用scala 2.11.x版本，在REPL中，就可以通过<code>:type</code>来查看一个类型的种类（Kind）了。比如：</p>
+<!-- language:scala run -->
+<pre><code>scala> :kind -v List
+scala.collection.immutable.List's kind is F[+A]
+* -(+)-> *
+This is a type constructor: a 1st-order-kinded type.
+
+scala> :kind -v Pair[_, _]
+scala.Tuple2's kind is F[+A1,+A2]
+* -(+)-> * -(+)-> *
+This is a type constructor: a 1st-order-kinded type.
+</code></pre>
+<p>可以看到，两者的类型一个是：<code>* → *</code> 另外一个是 <code>* → * → *</code>，而且，两个都是：<code>1st-order-kinded type</code>。那怎么才算是一个<code>higher order kinded type</code>呢？</p>
+<p>在上面的图中:<code>Functor[List]</code>是<code>higher order kinded type</code>: <code>(* → *) → *</code>，这个和<code>Pair[_, _]</code>的<code>* → * → *</code>相比，不就多了个括号吗？玄机就再这个括号上：<code>(* → *) → *</code>表示你接受一个一阶类型* → *，然后产生一个最终的类型。类型的类型，所以是高阶类型。</p>
+<h2>Implicit机制</h2>
+<p><code>implicit</code>是scala中一个很强大的东西，其主要出发点是“偷懒”，没错，就是偷懒，让程序员可以偷懒，将本来应该码农干的活交给“编译器”完成。</p>
+<p>implicit能帮我们码农的有两个地方：隐式参数和隐式转换。</p>
+<h3>隐式参数</h3>
+<p>具体来说，就是你可以将一个方法调用的参数（显式注为implicit）省略掉，编译器会在当前上下文中找能用于补充缺失掉参数的值，如果能找到，就自动填充，找不到就会在编译时报错。比如下面例子：</p>
+<!-- language:scala run -->
+<pre><code>def foo[T](t: T)(implicit integral: Integral[T]) = { println(integral) }
+foo(1)
+</code></pre>
+<p>注意<code>foo(1)</code>中只提供了第一个参数，一个<code>Int</code>值，但是第二个参数被省略了，scala编译器就会查找当前scope中有没有类型为<code>Integral[Int]</code>的<code>implicit</code>值。很幸运，scala.math.Numeric中定义了<code>implicit object IntIsIntegral extends IntIsIntegral with Ordering.IntOrdering</code>，所以编译器会找到<code>IntIsIntegral</code>对象然后自动补充第二个参数。</p>
+<p>那我们再试一下<code>foo(1.0)</code>，这个时候，编译器会报错。为什么呢？查查scala.math.Numeric源码，我们就会发现：scala为Double提供了implicit Fractional对象，make sense，double不是整数嘛。同时scala还是提供了一个对象<code>DoubleAsIfIntegral</code>，但并没有标记为<code>implicit</code>，所以编译器找不到。了解了原因，简单做如下改动：</p>
+<!-- language:scala run -->
+<pre><code>def foo[T](t: T)(implicit integral: Integral[T]) = { println(integral) }
+foo(1)
+implicit val doubleAsIfIntegral = scala.math.Numeric.DoubleAsIfIntegral
+foo(1.0)
+</code></pre>
+<p>现在大家都happy了。</p>
+<p>你可以通过<code>implicitly[Integral[Double]]</code>来自行查找是否有符合条件的隐式参数。</p>
+<h3>隐式转换</h3>
+<p>implicit的另外一个作用是隐式转换，同样也是帮助码农的。具体讲，就是当你在调用某个方法在某个对象上的时候，如果这个对象的类A并没有定义这个方法，scala的编译器先不会报错，会尝试着在当前scope中查找：</p>
+<ol>
+<li>具有该方法定义的类型 B</li>
+<li>能够将A转换为B的转换器</li>
+</ol>
+<p>如果能找到，那么scala将自动进行上述转换，找不到，报错。例如：</p>
+<!-- language:scala -->
+<pre><code>"123".map(_.toInt)
+</code></pre>
+<p><code>"123"</code>是一个<code>java.lang.String</code>类型，String上并没有定义<code>map</code>方法，但是编译器也没有报错，而且顺利执行了。这就是隐式转换：scala编译器会在上下文中找到<code>implicit def augmentString(x: String): StringOps = new StringOps(x)</code>，可以将<code>String</code>转换为有<code>map</code>定义的<code>StringOps</code>。</p>
+<p>你可以通过<code>implicitly[String => StringOps]</code>进行自行查找符合条件的转换器。</p>
+<p>基于隐式参数和隐式转换，在Scala的类型系统中，有两个语法糖：view bound (CC &#x3C;% Seq[T]) 和 context bound (T : Integral)。</p>
+<h3>View Bounds</h3>
+<p>说实话不知道这个翻译为什么好，在微博上和几位国内scala大牛们探讨过，一些人认为应该直译为：“视界”，我自己倒是觉得应该叫“化界”？因为：</p>
+<ol>
+<li>“视界”，可见到的边界，太笼统，含义模糊，“化界”顾名思义，可“转化到的边界”</li>
+<li>化界听上去比较炫，像是玄幻小说中很高深的境界，^_^</li>
+</ol>
+<p>You can think of <code>T &#x3C;% Ordered[T]</code> as saying, “I can use any T, so long as T can be treated as an Ordered[T].” This is different from saying that T is an Ordered[T], which is what an upper bound, <code>T &#x3C;: Ordered[T]</code>, would say.</p>
+<p>有时候隐式参数和隐式转换可以同时存在、起作用，比如下面代码：</p>
+<!-- language:scala run -->
+<pre><code>def getIndex[T, CC](seq: CC, value: T)(implicit converter: CC => Seq[T]) = seq.indexOf(value)
+
+getIndex("abcde", 'c')
+getIndex(List(1,3,2,5), 3)
+</code></pre>
+<p>上面代码中<code>CC</code>可以是任何能转换为<code>Seq</code>的类型，所以<code>String</code>和<code>List</code>都可以应用。</p>
+<p>首先，<code>converter</code>是一个隐式参数，其次，因为<code>seq</code>对象的类型是<code>CC</code>，其上面并没有定义<code>indexOf</code>方法，所以“隐式转换”介入。</p>
+<p>事实上，这个用法非常普遍，所以scala专门为其提供了一个语法糖：view bound <code>CC &#x3C;% Seq[T]</code>，重写上面代码：</p>
+<!-- language:scala run -->
+<pre><code>def getIndex[T, CC &#x3C;% Seq[T]](seq: CC, value: T) = seq.indexOf(value)
+</code></pre>
+<p>运行上面代码，你可以从输出看到scala编译器会将方法重新定义为：<code>getIndex: [T, CC](list: CC, value: T)(implicit evidence$1: CC => Seq[T])Int</code>，和第一种方法一样。</p>
+<h3>Context Bounds</h3>
+<p>再看下面一个例子：</p>
+<!-- language:scala run -->
+<pre><code>def sum[T](list: List[T])(implicit integral: Integral[T]): T = {
+    import integral._   // get the implicits in question into scope
+    list.foldLeft(integral.zero)(_ + _)
+}
+</code></pre>
+<p>这里有一个隐式参数<code>integral</code>类型为<code>Integral[T]</code>，如果方法传入<code>Int</code>，那么scala编译器就会找<code>implicitly[Integral[Int]]</code>，这个我们在隐式参数小节已经说过了。</p>
+<p>这里主要关注另外一个问题：<code>list.foldLeft(integral.zero)(_ + _)</code>，其中<code>_</code>的类型应该是<code>T</code>，但是<code>T</code>上面有定义<code>+</code>方法吗？我们先把<code>import integral._</code>去掉，就会发现编译出错：</p>
+<!-- language:scala -->
+<pre><code>&#x3C;console>:8: error: type mismatch;
+ found   : T
+ required: String
+           list.foldLeft(integral.zero)(_ + _)
+                                        ^
+</code></pre>
+<p>原来scala编译器尝试着将<code>T</code>转换为<code>String</code>了，这里应该是<code>Predef.any2string</code>起了作用。</p>
+<p>加上<code>import integral._</code>，一切工作了。</p>
+<p>回头想一下，其实挺有意思的：我们给一个泛型<code>T</code>动态地添加了<code>+</code>方法，但是并不改变<code>T</code>的代码。而这就是context bound的意义。</p>
+<p>这个在流行框架<code>Scalaz</code>中应用非常广泛。scala同样为其创建了专门的语法糖：<code>[T : Ordering]</code>。采用语法糖，这个例子可以重写为：</p>
+<!-- language:scala run -->
+<pre><code>def sum[T : Integral](list: List[T]): T = {
+  val integral = implicitly[Integral[T]]
+  import integral._
+  list.foldLeft(integral.zero)(_ + _)
+}
+</code></pre>
+<p>编译器编译之后，会生成一个<code>sum: [T](list: List[T])(implicit evidence$1: Integral[T])T</code>的方法。</p>
+<p>这里有点让人confusing的地方是：<code>T: Integral</code>的写法感觉像是说：<code>T</code>是<code>Integral</code>的类型，就像：<code>m: T</code>，可实际上应该认为是：<code>T</code>在<code>Integral</code>的<code>Context</code>中。</p>
+<h2>结束语</h2>
+<p>scala的类型系统确实是一个难点，但同时也是要真正掌握scala语言所必须的知识点。很多概念都很晦涩，对于像我们这些凡人，要想掌握没有太好的办法，只能多看、多练、多想。</p>
+<h2>参考</h2>
+<ol>
+<li><a href="http://stackoverflow.com/questions/6246719/what-is-a-higher-kinded-type-in-scala">Adriaan Moors. What is a higher kinded type in scala. StackOverflow. http://stackoverflow.com/questions/6246719/what-is-a-higher-kinded-type-in-scala. 2011</a></li>
+<li><a href="http://docs.scala-lang.org/overviews/core/architecture-of-scala-collections.html">Martin Odersky and Lex Spoon. Architecture of Scala Collection. scala-lang website. http://docs.scala-lang.org/overviews/core/architecture-of-scala-collections.html. 2013</a></li>
+<li><a href="http://stackoverflow.com/questions/5598085/where-does-scala-look-for-implicits">Daniel C. Sobral. Types of Implicits. StackOverflow. http://stackoverflow.com/questions/5598085/where-does-scala-look-for-implicits. 2011</a></li>
+<li><a href="http://blogs.atlassian.com/2013/09/scala-types-of-a-higher-kind/">Jed Wesley-Smith. Scala Types Of a Higher Kind. http://blogs.atlassian.com/2013/09/scala-types-of-a-higher-kind/</a></li>
+</ol></div><hr data-reactid="14"/><p data-reactid="15"><a href="/smilingleo/2014/scala-error-handling-in-fp-style" data-reactid="16"><!-- react-text: 17 -->Prev: <!-- /react-text --><!-- react-text: 18 -->Scala函数式异常处理<!-- /react-text --></a></p><p data-reactid="19"><a href="/smilingleo/2013/map-flatmap-for" data-reactid="20"><!-- react-text: 21 -->Next: <!-- /react-text --><!-- react-text: 22 -->map/flatMap/for in Action<!-- /react-text --></a></p></div></div></div></div></div><script id="webpack-manifest">/*<![CDATA[*/window.webpackManifest={"231608221292675":"app-5c2132a2a5fb1e73d272.js","205117723866763":"component---src-templates-all-tags-js-a109e949baa4beb6ccfa.js","50739212244294":"component---src-templates-tags-js-9f33bf6d5da76dc9fc95.js","107818501498521":"component---src-templates-blog-post-js-c0443aac1d724d7a5344.js","162898551421021":"component---src-pages-404-js-4503918ea3a16cfcdb75.js","35783957827783":"component---src-pages-index-js-807e2d13b7a562d4e1d9.js","60335399758886":"path----557518bd178906f8d58a.js","55702396619907":"path---tags-695ae3fa97be24cfc3f2.js","149715110220355":"path---tags-aop-e8b5d3a893ac14ff1e45.js","205844350356459":"path---tags-generics-b473e641a4fb240f72ec.js","265833440297962":"path---tags-sni-6ca0e3557be4d8ea994c.js","38511735442254":"path---tags-bash-78ecfeb5fb0e066dac08.js","17976388717192":"path---tags-blog-fb5c9fe3b2697db6ce2e.js","197808841186072":"path---tags-docker-362f9c496026920907f2.js","24602443328524":"path---tags-domain-fronting-9f76d116edc28a7f6929.js","161137313696305":"path---tags-exception-handling-634d2c4a57f64091c505.js","243269949919125":"path---tags-fold-ff621ebcb6b33c2c5a71.js","256443400477714":"path---tags-functional-programming-6ae7219d9703b131869c.js","233087740631070":"path---tags-high-order-function-59b1dc2e90f947716cc3.js","239329986096068":"path---tags-jq-312f1a5a53afec329b94.js","192492090467034":"path---tags-json-b5eb19cc60ff8ddd4e3f.js","45758362528925":"path---tags-markdown-f756f8423fb6f37e9340.js","17270373950093":"path---tags-mixin-630baa87e546abd84b8f.js","74744864286084":"path---tags-monad-de22e68996ca2ad1e797.js","195264559327502":"path---tags-mysql-135986a1fa0afb8aeb17.js","95988397937227":"path---tags-plantuml-679c988e3debe23c4f2d.js","36566847472775":"path---tags-playframework-370e29bbd7c868459cb6.js","247966473797167":"path---tags-scala-e9e3b1fd034b32eeefe0.js","271247804529356":"path---tags-skipper-aa05c4693084521275ac.js","196246339156404":"path---tags-trouble-shooting-20a71211cfa8cbdea5ea.js","88252766766524":"path---2018-skipper-sni-domain-fronting-47ecdc8cb01d5d7ca260.js","126056250917440":"path---2013-jq-dff6e9f9cf2eed9a480a.js","80471449016911":"path---2016-function-covariant-contravariant-a0d9655be88b567b788f.js","160173089388872":"path---2015-aop-by-mixin-in-scala-ab2fa04da27ed23ab273.js","152950064045903":"path---2015-scala-trouble-shooting-25206b9ed7366ebd4d40.js","138741863182975":"path---2015-mysql-replication-on-docker-e9bfdc9d9cfdff079bd8.js","103780502420544":"path---2014-scala-error-handling-in-fp-style-f31725868360f6753a82.js","40604194893770":"path---2014-generics-of-a-higher-kind-03e1de07326c0d247725.js","221920289143488":"path---2013-map-flatmap-for-bfbd1d7800b1c3ee7cee.js","151071421629745":"path---2013-fold-a9dbcddaee5854cbd96c.js","27141419837156":"path---2013-monad-726e8100eb415ffea252.js","259696187681630":"path---2013-high-order-function-85f59929d2aa253bd20e.js","99400273606428":"path---2013-actor-collection-collabration-7bdd0b3555bd9c8418d2.js","70095039145155":"path---2013-enumerator-iteratee-enumeratee-eb45e7a66f854b026ac0.js","12496857631532":"path---2013-markdown-plantuml-integration-d3bf5c6462f282306250.js","242031673056639":"path---2013-essential-action-in-play-75b4a453d404d0c84500.js","140096631316722":"path---2013-blogging-with-markdown-971aae66f59b01379412.js","90415289315478":"path---2013-start-be8c9f33946bba3021dd.js","254022195166212":"path---404-a0e39f21c11f6a62c5ab.js","142629428675168":"path---index-879de2c0bce54cb986b2.js","178698757827068":"path---404-html-a0e39f21c11f6a62c5ab.js","114276838955818":"component---src-layouts-index-js-742157258a16cdd4ab2e.js"}/*]]>*/</script><script>/*<![CDATA[*/!function(e,t,r){function n(){for(;d[0]&&"loaded"==d[0][f];)c=d.shift(),c[o]=!i.parentNode.insertBefore(c,i)}for(var s,a,c,d=[],i=e.scripts[0],o="onreadystatechange",f="readyState";s=r.shift();)a=e.createElement(t),"async"in i?(a.async=!1,e.head.appendChild(a)):i[f]?(d.push(a),a[o]=n):e.write("<"+t+' src="'+s+'" defer></'+t+">"),a.src=s}(document,"script",["/smilingleo/commons-581f82a2f76d1a2b9848.js","/smilingleo/app-5c2132a2a5fb1e73d272.js","/smilingleo/path---2014-generics-of-a-higher-kind-03e1de07326c0d247725.js","/smilingleo/component---src-templates-blog-post-js-c0443aac1d724d7a5344.js","/smilingleo/component---src-layouts-index-js-742157258a16cdd4ab2e.js"])/*]]>*/</script></body></html>
