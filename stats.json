@@ -9,8 +9,8 @@
       "path---tags-mixin-630baa87e546abd84b8f.js.map"
     ],
     "path---tags-blog": [
-      "path---tags-blog-9f97e5fd47a25f712255.js",
-      "path---tags-blog-9f97e5fd47a25f712255.js.map"
+      "path---tags-blog-15f90a93dd737f5fd4f1.js",
+      "path---tags-blog-15f90a93dd737f5fd4f1.js.map"
     ],
     "path---tags-domain-fronting": [
       "path---tags-domain-fronting-9f76d116edc28a7f6929.js",
@@ -44,6 +44,10 @@
       "component---src-templates-tags-js-9f33bf6d5da76dc9fc95.js",
       "component---src-templates-tags-js-9f33bf6d5da76dc9fc95.js.map"
     ],
+    "path---2018-enable-comments-for-gatsby-blog": [
+      "path---2018-enable-comments-for-gatsby-blog-1144600782315ceae43d.js",
+      "path---2018-enable-comments-for-gatsby-blog-1144600782315ceae43d.js.map"
+    ],
     "path---tags": [
       "path---tags-fd42c92b9e37110f18a3.js",
       "path---tags-fd42c92b9e37110f18a3.js.map"
@@ -65,8 +69,8 @@
       "path---2016-function-covariant-contravariant-a0d9655be88b567b788f.js.map"
     ],
     "path---2018-skipper-sni-domain-fronting": [
-      "path---2018-skipper-sni-domain-fronting-47ecdc8cb01d5d7ca260.js",
-      "path---2018-skipper-sni-domain-fronting-47ecdc8cb01d5d7ca260.js.map"
+      "path---2018-skipper-sni-domain-fronting-21a9efc4bfae5752c150.js",
+      "path---2018-skipper-sni-domain-fronting-21a9efc4bfae5752c150.js.map"
     ],
     "path---2013-start": [
       "path---2013-start-be8c9f33946bba3021dd.js",
@@ -85,8 +89,8 @@
       "path---2014-scala-error-handling-in-fp-style-f31725868360f6753a82.js.map"
     ],
     "component---src-templates-blog-post-js": [
-      "component---src-templates-blog-post-js-dc0fef30abd3f2ff0f54.js",
-      "component---src-templates-blog-post-js-dc0fef30abd3f2ff0f54.js.map"
+      "component---src-templates-blog-post-js-a7403c0089836e39d702.js",
+      "component---src-templates-blog-post-js-a7403c0089836e39d702.js.map"
     ],
     "component---src-layouts-index-js": [
       "component---src-layouts-index-js-ba61a6cb0312885c696f.js",
@@ -109,8 +113,8 @@
       "path---2013-blogging-with-markdown-971aae66f59b01379412.js.map"
     ],
     "path---index": [
-      "path---index-7cd7934e68d1e28b911f.js",
-      "path---index-7cd7934e68d1e28b911f.js.map"
+      "path---index-7d6dda309f5a73e87483.js",
+      "path---index-7d6dda309f5a73e87483.js.map"
     ],
     "path---tags-aop": [
       "path---tags-aop-e8b5d3a893ac14ff1e45.js",
@@ -173,9 +177,9 @@
       "path---2013-map-flatmap-for-bfbd1d7800b1c3ee7cee.js.map"
     ],
     "app": [
-      "app-91fe96c9c003b1c2e7d8.js",
+      "app-a69918de9aaa8e2b6499.js",
       "build-js-styles.css",
-      "app-91fe96c9c003b1c2e7d8.js.map",
+      "app-a69918de9aaa8e2b6499.js.map",
       "build-js-styles.css.map"
     ],
     "path---tags-high-order-function": [
