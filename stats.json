@@ -9,8 +9,8 @@
       "path---tags-mixin-630baa87e546abd84b8f.js.map"
     ],
     "path---tags-blog": [
-      "path---tags-blog-15f90a93dd737f5fd4f1.js",
-      "path---tags-blog-15f90a93dd737f5fd4f1.js.map"
+      "path---tags-blog-10d11ac79a9e5005958b.js",
+      "path---tags-blog-10d11ac79a9e5005958b.js.map"
     ],
     "path---tags-domain-fronting": [
       "path---tags-domain-fronting-9f76d116edc28a7f6929.js",
@@ -19,10 +19,6 @@
     "path---2013-monad": [
       "path---2013-monad-726e8100eb415ffea252.js",
       "path---2013-monad-726e8100eb415ffea252.js.map"
-    ],
-    "component---src-pages-index-js": [
-      "component---src-pages-index-js-6763a8660ea99d22e992.js",
-      "component---src-pages-index-js-6763a8660ea99d22e992.js.map"
     ],
     "path---tags-playframework": [
       "path---tags-playframework-370e29bbd7c868459cb6.js",
@@ -45,8 +41,8 @@
       "component---src-templates-tags-js-9f33bf6d5da76dc9fc95.js.map"
     ],
     "path---2018-enable-comments-for-gatsby-blog": [
-      "path---2018-enable-comments-for-gatsby-blog-1144600782315ceae43d.js",
-      "path---2018-enable-comments-for-gatsby-blog-1144600782315ceae43d.js.map"
+      "path---2018-enable-comments-for-gatsby-blog-27c17dfc70125ab13cfd.js",
+      "path---2018-enable-comments-for-gatsby-blog-27c17dfc70125ab13cfd.js.map"
     ],
     "path---tags": [
       "path---tags-fd42c92b9e37110f18a3.js",
@@ -88,9 +84,13 @@
       "path---2014-scala-error-handling-in-fp-style-f31725868360f6753a82.js",
       "path---2014-scala-error-handling-in-fp-style-f31725868360f6753a82.js.map"
     ],
+    "component---src-templates-index-js": [
+      "component---src-templates-index-js-f9b7ac05edfe03ad76bf.js",
+      "component---src-templates-index-js-f9b7ac05edfe03ad76bf.js.map"
+    ],
     "component---src-templates-blog-post-js": [
-      "component---src-templates-blog-post-js-a7403c0089836e39d702.js",
-      "component---src-templates-blog-post-js-a7403c0089836e39d702.js.map"
+      "component---src-templates-blog-post-js-edaf9f6b6d301d08176a.js",
+      "component---src-templates-blog-post-js-edaf9f6b6d301d08176a.js.map"
     ],
     "component---src-layouts-index-js": [
       "component---src-layouts-index-js-ba61a6cb0312885c696f.js",
@@ -113,8 +113,8 @@
       "path---2013-blogging-with-markdown-971aae66f59b01379412.js.map"
     ],
     "path---index": [
-      "path---index-7d6dda309f5a73e87483.js",
-      "path---index-7d6dda309f5a73e87483.js.map"
+      "path---index-2f6337cd0f8f1b525646.js",
+      "path---index-2f6337cd0f8f1b525646.js.map"
     ],
     "path---tags-aop": [
       "path---tags-aop-e8b5d3a893ac14ff1e45.js",
@@ -127,6 +127,10 @@
     "path---2015-scala-trouble-shooting": [
       "path---2015-scala-trouble-shooting-25206b9ed7366ebd4d40.js",
       "path---2015-scala-trouble-shooting-25206b9ed7366ebd4d40.js.map"
+    ],
+    "path---2": [
+      "path---2-f877235dd7ac7f556960.js",
+      "path---2-f877235dd7ac7f556960.js.map"
     ],
     "path---2015-aop-by-mixin-in-scala": [
       "path---2015-aop-by-mixin-in-scala-ab2fa04da27ed23ab273.js",
@@ -177,9 +181,9 @@
       "path---2013-map-flatmap-for-bfbd1d7800b1c3ee7cee.js.map"
     ],
     "app": [
-      "app-a69918de9aaa8e2b6499.js",
+      "app-5458a6c506c25b401f35.js",
       "build-js-styles.css",
-      "app-a69918de9aaa8e2b6499.js.map",
+      "app-5458a6c506c25b401f35.js.map",
       "build-js-styles.css.map"
     ],
     "path---tags-high-order-function": [
@@ -219,8 +223,8 @@
       "path---tags-github-c366a34cae5833ccf5a0.js.map"
     ],
     "path---2018-blog-with-gatsby": [
-      "path---2018-blog-with-gatsby-563f7fa79089b61be22e.js",
-      "path---2018-blog-with-gatsby-563f7fa79089b61be22e.js.map"
+      "path---2018-blog-with-gatsby-e4cc24d8f7a34397ba52.js",
+      "path---2018-blog-with-gatsby-e4cc24d8f7a34397ba52.js.map"
     ],
     "path---tags-sni": [
       "path---tags-sni-6ca0e3557be4d8ea994c.js",
