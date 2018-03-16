@@ -12,6 +12,10 @@
       "path---tags-blog-b8bd806bb6be5e170d92.js",
       "path---tags-blog-b8bd806bb6be5e170d92.js.map"
     ],
+    "path---tags-架构": [
+      "path---tags-架构-7967fc02c0d3367cb5d2.js",
+      "path---tags-架构-7967fc02c0d3367cb5d2.js.map"
+    ],
     "path---tags-domain-fronting": [
       "path---tags-domain-fronting-4a06b7d3e33da601b5ee.js",
       "path---tags-domain-fronting-4a06b7d3e33da601b5ee.js.map"
@@ -45,8 +49,8 @@
       "path---2018-enable-comments-for-gatsby-blog-6f1b3086a51dc32151a3.js.map"
     ],
     "path---tags": [
-      "path---tags-fd42c92b9e37110f18a3.js",
-      "path---tags-fd42c92b9e37110f18a3.js.map"
+      "path---tags-0c12409e180e64edac14.js",
+      "path---tags-0c12409e180e64edac14.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
@@ -100,6 +104,10 @@
       "path---2013-jq-0dc863fa223959746276.js",
       "path---2013-jq-0dc863fa223959746276.js.map"
     ],
+    "path---tags-开发环境": [
+      "path---tags-开发环境-bc0d0a7c79bff16cebb3.js",
+      "path---tags-开发环境-bc0d0a7c79bff16cebb3.js.map"
+    ],
     "path---tags-gatsby": [
       "path---tags-gatsby-e20594d49d1fc2dd4145.js",
       "path---tags-gatsby-e20594d49d1fc2dd4145.js.map"
@@ -112,9 +120,13 @@
       "path---2013-blogging-with-markdown-971aae66f59b01379412.js",
       "path---2013-blogging-with-markdown-971aae66f59b01379412.js.map"
     ],
+    "path---tags-microservices": [
+      "path---tags-microservices-d0d8dab4bd96a67dfe6c.js",
+      "path---tags-microservices-d0d8dab4bd96a67dfe6c.js.map"
+    ],
     "path---index": [
-      "path---index-f95f1fad6162a4707318.js",
-      "path---index-f95f1fad6162a4707318.js.map"
+      "path---index-79deb4307288e8100342.js",
+      "path---index-79deb4307288e8100342.js.map"
     ],
     "path---tags-aop": [
       "path---tags-aop-e8b5d3a893ac14ff1e45.js",
@@ -128,9 +140,13 @@
       "path---2015-scala-trouble-shooting-25206b9ed7366ebd4d40.js",
       "path---2015-scala-trouble-shooting-25206b9ed7366ebd4d40.js.map"
     ],
+    "path---tags-微服务": [
+      "path---tags-微服务-22befef0a466edd0cd13.js",
+      "path---tags-微服务-22befef0a466edd0cd13.js.map"
+    ],
     "path---2": [
-      "path---2-a71ee5415b8bc38bb67f.js",
-      "path---2-a71ee5415b8bc38bb67f.js.map"
+      "path---2-9701b8dd5bf7dcf1c82c.js",
+      "path---2-9701b8dd5bf7dcf1c82c.js.map"
     ],
     "path---2015-aop-by-mixin-in-scala": [
       "path---2015-aop-by-mixin-in-scala-ab2fa04da27ed23ab273.js",
@@ -153,8 +169,8 @@
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---3": [
-      "path---3-3c7d578d8820ea2e2088.js",
-      "path---3-3c7d578d8820ea2e2088.js.map"
+      "path---3-e35ffe9ef2b199f82bb7.js",
+      "path---3-e35ffe9ef2b199f82bb7.js.map"
     ],
     "path---tags-json": [
       "path---tags-json-b5eb19cc60ff8ddd4e3f.js",
@@ -185,9 +201,9 @@
       "path---2013-map-flatmap-for-bfbd1d7800b1c3ee7cee.js.map"
     ],
     "app": [
-      "app-97eb19f9113371fe8d3d.js",
+      "app-ecccf067276a95853ff4.js",
       "build-js-styles.css",
-      "app-97eb19f9113371fe8d3d.js.map",
+      "app-ecccf067276a95853ff4.js.map",
       "build-js-styles.css.map"
     ],
     "path---tags-high-order-function": [
@@ -205,6 +221,10 @@
     "path---tags-fold": [
       "path---tags-fold-ff621ebcb6b33c2c5a71.js",
       "path---tags-fold-ff621ebcb6b33c2c5a71.js.map"
+    ],
+    "path---2018-development-environment-for-microservices": [
+      "path---2018-development-environment-for-microservices-79f202cd6ecaa3bf118b.js",
+      "path---2018-development-environment-for-microservices-79f202cd6ecaa3bf118b.js.map"
     ],
     "path---tags-scala": [
       "path---tags-scala-e9e3b1fd034b32eeefe0.js",
