@@ -33,8 +33,8 @@
       "path---tags-playframework-370e29bbd7c868459cb6.js.map"
     ],
     "path---tags-bash": [
-      "path---tags-bash-c6ae40c8b0f27f816f84.js",
-      "path---tags-bash-c6ae40c8b0f27f816f84.js.map"
+      "path---tags-bash-3cc416feb84651fb8149.js",
+      "path---tags-bash-3cc416feb84651fb8149.js.map"
     ],
     "path---2014-generics-of-a-higher-kind": [
       "path---2014-generics-of-a-higher-kind-03e1de07326c0d247725.js",
@@ -53,8 +53,8 @@
       "path---2018-enable-comments-for-gatsby-blog-6f1b3086a51dc32151a3.js.map"
     ],
     "path---tags": [
-      "path---tags-b23402de6b5937d4aa99.js",
-      "path---tags-b23402de6b5937d4aa99.js.map"
+      "path---tags-5b9834ba0e03685ceebb.js",
+      "path---tags-5b9834ba0e03685ceebb.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
@@ -125,8 +125,8 @@
       "path---tags-microservices-d0d8dab4bd96a67dfe6c.js.map"
     ],
     "path---index": [
-      "path---index-4e9c0273a3cd7e6c08f0.js",
-      "path---index-4e9c0273a3cd7e6c08f0.js.map"
+      "path---index-e2df6f23ec97b8545803.js",
+      "path---index-e2df6f23ec97b8545803.js.map"
     ],
     "path---tags-aop": [
       "path---tags-aop-e8b5d3a893ac14ff1e45.js",
@@ -145,8 +145,8 @@
       "path---tags-微服务-22befef0a466edd0cd13.js.map"
     ],
     "path---2": [
-      "path---2-95e102702f1481fa6aa5.js",
-      "path---2-95e102702f1481fa6aa5.js.map"
+      "path---2-51818f8750e6f3e625ad.js",
+      "path---2-51818f8750e6f3e625ad.js.map"
     ],
     "path---tags-http-2": [
       "path---tags-http-2-17f7d57e63eb768e8848.js",
@@ -177,12 +177,12 @@
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---3": [
-      "path---3-dcfbea2d5dd4cb1debba.js",
-      "path---3-dcfbea2d5dd4cb1debba.js.map"
+      "path---3-7d8f802a3fc8b05dbfa2.js",
+      "path---3-7d8f802a3fc8b05dbfa2.js.map"
     ],
     "path---tags-json": [
-      "path---tags-json-f686084fba50ccdb742a.js",
-      "path---tags-json-f686084fba50ccdb742a.js.map"
+      "path---tags-json-16f80aa8887c6788699e.js",
+      "path---tags-json-16f80aa8887c6788699e.js.map"
     ],
     "path---tags-mysql": [
       "path---tags-mysql-135986a1fa0afb8aeb17.js",
@@ -205,17 +205,21 @@
       "path---tags-generics-b473e641a4fb240f72ec.js.map"
     ],
     "path---2016-jq": [
-      "path---2016-jq-b68289bbfe6fe322b741.js",
-      "path---2016-jq-b68289bbfe6fe322b741.js.map"
+      "path---2016-jq-c7c8ae10999b5025e6a4.js",
+      "path---2016-jq-c7c8ae10999b5025e6a4.js.map"
     ],
     "path---2013-map-flatmap-for": [
       "path---2013-map-flatmap-for-bfbd1d7800b1c3ee7cee.js",
       "path---2013-map-flatmap-for-bfbd1d7800b1c3ee7cee.js.map"
     ],
+    "path---2018-how-to-read-rust-api-doc": [
+      "path---2018-how-to-read-rust-api-doc-f69d4b92754a3ba03829.js",
+      "path---2018-how-to-read-rust-api-doc-f69d4b92754a3ba03829.js.map"
+    ],
     "app": [
-      "app-5063781dd88be6521754.js",
+      "app-3175d1774fd71360945e.js",
       "build-js-styles.css",
-      "app-5063781dd88be6521754.js.map",
+      "app-3175d1774fd71360945e.js.map",
       "build-js-styles.css.map"
     ],
     "path---tags-high-order-function": [
@@ -223,8 +227,8 @@
       "path---tags-high-order-function-59b1dc2e90f947716cc3.js.map"
     ],
     "path---tags-jq": [
-      "path---tags-jq-661ca8fcfb8da657205f.js",
-      "path---tags-jq-661ca8fcfb8da657205f.js.map"
+      "path---tags-jq-5d630040ac9807317705.js",
+      "path---tags-jq-5d630040ac9807317705.js.map"
     ],
     "path---2013-essential-action-in-play": [
       "path---2013-essential-action-in-play-75b4a453d404d0c84500.js",
@@ -249,6 +253,10 @@
     "path---tags-functional-programming": [
       "path---tags-functional-programming-6ae7219d9703b131869c.js",
       "path---tags-functional-programming-6ae7219d9703b131869c.js.map"
+    ],
+    "path---tags-rust": [
+      "path---tags-rust-3175dc7f990f3b29b9f8.js",
+      "path---tags-rust-3175dc7f990f3b29b9f8.js.map"
     ],
     "path---2013-high-order-function": [
       "path---2013-high-order-function-85f59929d2aa253bd20e.js",
