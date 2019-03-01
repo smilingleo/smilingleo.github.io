@@ -4,6 +4,10 @@
       "path---2013-markdown-plantuml-integration-d3bf5c6462f282306250.js",
       "path---2013-markdown-plantuml-integration-d3bf5c6462f282306250.js.map"
     ],
+    "path---2019-rust-tokio-futures-poll-not-ready": [
+      "path---2019-rust-tokio-futures-poll-not-ready-e3c5567f22dd22453745.js",
+      "path---2019-rust-tokio-futures-poll-not-ready-e3c5567f22dd22453745.js.map"
+    ],
     "path---tags-mixin": [
       "path---tags-mixin-630baa87e546abd84b8f.js",
       "path---tags-mixin-630baa87e546abd84b8f.js.map"
@@ -40,6 +44,10 @@
       "path---2014-generics-of-a-higher-kind-03e1de07326c0d247725.js",
       "path---2014-generics-of-a-higher-kind-03e1de07326c0d247725.js.map"
     ],
+    "path---tags-future": [
+      "path---tags-future-8552e66d2c970b51a2f0.js",
+      "path---tags-future-8552e66d2c970b51a2f0.js.map"
+    ],
     "path---tags-markdown": [
       "path---tags-markdown-f756f8423fb6f37e9340.js",
       "path---tags-markdown-f756f8423fb6f37e9340.js.map"
@@ -53,8 +61,8 @@
       "path---2018-enable-comments-for-gatsby-blog-6f1b3086a51dc32151a3.js.map"
     ],
     "path---tags": [
-      "path---tags-5b9834ba0e03685ceebb.js",
-      "path---tags-5b9834ba0e03685ceebb.js.map"
+      "path---tags-709d18a721030d906d2d.js",
+      "path---tags-709d18a721030d906d2d.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
@@ -125,8 +133,8 @@
       "path---tags-microservices-d0d8dab4bd96a67dfe6c.js.map"
     ],
     "path---index": [
-      "path---index-8f377f23f79550756de7.js",
-      "path---index-8f377f23f79550756de7.js.map"
+      "path---index-cf8691219e9f1399170f.js",
+      "path---index-cf8691219e9f1399170f.js.map"
     ],
     "path---tags-aop": [
       "path---tags-aop-e8b5d3a893ac14ff1e45.js",
@@ -145,8 +153,8 @@
       "path---tags-微服务-22befef0a466edd0cd13.js.map"
     ],
     "path---2": [
-      "path---2-51818f8750e6f3e625ad.js",
-      "path---2-51818f8750e6f3e625ad.js.map"
+      "path---2-724d75723428e1a93bc3.js",
+      "path---2-724d75723428e1a93bc3.js.map"
     ],
     "path---tags-http-2": [
       "path---tags-http-2-17f7d57e63eb768e8848.js",
@@ -177,8 +185,8 @@
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---3": [
-      "path---3-7d8f802a3fc8b05dbfa2.js",
-      "path---3-7d8f802a3fc8b05dbfa2.js.map"
+      "path---3-132cda1764f384ffcb73.js",
+      "path---3-132cda1764f384ffcb73.js.map"
     ],
     "path---tags-json": [
       "path---tags-json-16f80aa8887c6788699e.js",
@@ -208,6 +216,10 @@
       "path---2016-jq-c7c8ae10999b5025e6a4.js",
       "path---2016-jq-c7c8ae10999b5025e6a4.js.map"
     ],
+    "path---tags-tokio": [
+      "path---tags-tokio-4b6eb9c6e5ea9eb20f43.js",
+      "path---tags-tokio-4b6eb9c6e5ea9eb20f43.js.map"
+    ],
     "path---2013-map-flatmap-for": [
       "path---2013-map-flatmap-for-bfbd1d7800b1c3ee7cee.js",
       "path---2013-map-flatmap-for-bfbd1d7800b1c3ee7cee.js.map"
@@ -217,9 +229,9 @@
       "path---2018-how-to-read-rust-api-doc-1b4dca571aafa4f4bb9d.js.map"
     ],
     "app": [
-      "app-3175d1774fd71360945e.js",
+      "app-1831159d620374592d20.js",
       "build-js-styles.css",
-      "app-3175d1774fd71360945e.js.map",
+      "app-1831159d620374592d20.js.map",
       "build-js-styles.css.map"
     ],
     "path---tags-high-order-function": [
@@ -246,6 +258,10 @@
       "path---tags-scala-e9e3b1fd034b32eeefe0.js",
       "path---tags-scala-e9e3b1fd034b32eeefe0.js.map"
     ],
+    "path---tags-async-programming": [
+      "path---tags-async-programming-ed2d5c8cb43f2cb0433c.js",
+      "path---tags-async-programming-ed2d5c8cb43f2cb0433c.js.map"
+    ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
       "path---404-a0e39f21c11f6a62c5ab.js.map"
@@ -255,8 +271,8 @@
       "path---tags-functional-programming-6ae7219d9703b131869c.js.map"
     ],
     "path---tags-rust": [
-      "path---tags-rust-9c4a651c059c68f37661.js",
-      "path---tags-rust-9c4a651c059c68f37661.js.map"
+      "path---tags-rust-f528b0ec11dbc9592aab.js",
+      "path---tags-rust-f528b0ec11dbc9592aab.js.map"
     ],
     "path---2013-high-order-function": [
       "path---2013-high-order-function-85f59929d2aa253bd20e.js",
