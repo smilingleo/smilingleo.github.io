@@ -28,6 +28,14 @@
       "path---2013-monad-726e8100eb415ffea252.js",
       "path---2013-monad-726e8100eb415ffea252.js.map"
     ],
+    "path---tags-serverless": [
+      "path---tags-serverless-a1e63d71322768c91028.js",
+      "path---tags-serverless-a1e63d71322768c91028.js.map"
+    ],
+    "path---tags-aws": [
+      "path---tags-aws-b49bbbe67acdf5b11b51.js",
+      "path---tags-aws-b49bbbe67acdf5b11b51.js.map"
+    ],
     "path---2018-simple-performance-comparison-between-http-2-and-http-1": [
       "path---2018-simple-performance-comparison-between-http-2-and-http-1-3d1ba83f452be9381487.js",
       "path---2018-simple-performance-comparison-between-http-2-and-http-1-3d1ba83f452be9381487.js.map"
@@ -61,8 +69,8 @@
       "path---2018-enable-comments-for-gatsby-blog-6f1b3086a51dc32151a3.js.map"
     ],
     "path---tags": [
-      "path---tags-709d18a721030d906d2d.js",
-      "path---tags-709d18a721030d906d2d.js.map"
+      "path---tags-ea9fbdabc66756464802.js",
+      "path---tags-ea9fbdabc66756464802.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
@@ -120,6 +128,10 @@
       "path---tags-gatsby-e20594d49d1fc2dd4145.js",
       "path---tags-gatsby-e20594d49d1fc2dd4145.js.map"
     ],
+    "path---tags-背单词": [
+      "path---tags-背单词-8a736d017973e0b7f8de.js",
+      "path---tags-背单词-8a736d017973e0b7f8de.js.map"
+    ],
     "path---2015-mysql-replication-on-docker": [
       "path---2015-mysql-replication-on-docker-e9bfdc9d9cfdff079bd8.js",
       "path---2015-mysql-replication-on-docker-e9bfdc9d9cfdff079bd8.js.map"
@@ -133,8 +145,8 @@
       "path---tags-microservices-d0d8dab4bd96a67dfe6c.js.map"
     ],
     "path---index": [
-      "path---index-6ad3fbb3843ba565c1b3.js",
-      "path---index-6ad3fbb3843ba565c1b3.js.map"
+      "path---index-d754e51bc53ab611890f.js",
+      "path---index-d754e51bc53ab611890f.js.map"
     ],
     "path---tags-aop": [
       "path---tags-aop-e8b5d3a893ac14ff1e45.js",
@@ -153,8 +165,8 @@
       "path---tags-微服务-22befef0a466edd0cd13.js.map"
     ],
     "path---2": [
-      "path---2-33f7f8e05ab26e4ad328.js",
-      "path---2-33f7f8e05ab26e4ad328.js.map"
+      "path---2-7b37a8ae978e5335b5cd.js",
+      "path---2-7b37a8ae978e5335b5cd.js.map"
     ],
     "path---tags-http-2": [
       "path---tags-http-2-17f7d57e63eb768e8848.js",
@@ -185,8 +197,12 @@
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---3": [
-      "path---3-6a2a620c4779e224e81e.js",
-      "path---3-6a2a620c4779e224e81e.js.map"
+      "path---3-12baebfdc0ab68f484ae.js",
+      "path---3-12baebfdc0ab68f484ae.js.map"
+    ],
+    "path---2020-how-to-build-a-serverless-wechat-mini-program": [
+      "path---2020-how-to-build-a-serverless-wechat-mini-program-c605ed5ce9ba90efc444.js",
+      "path---2020-how-to-build-a-serverless-wechat-mini-program-c605ed5ce9ba90efc444.js.map"
     ],
     "path---tags-json": [
       "path---tags-json-16f80aa8887c6788699e.js",
@@ -216,6 +232,10 @@
       "path---2016-jq-c7c8ae10999b5025e6a4.js",
       "path---2016-jq-c7c8ae10999b5025e6a4.js.map"
     ],
+    "path---tags-微信小程序": [
+      "path---tags-微信小程序-77b2ccd8091a14e39d66.js",
+      "path---tags-微信小程序-77b2ccd8091a14e39d66.js.map"
+    ],
     "path---tags-tokio": [
       "path---tags-tokio-090267953a01589b8dba.js",
       "path---tags-tokio-090267953a01589b8dba.js.map"
@@ -229,9 +249,9 @@
       "path---2018-how-to-read-rust-api-doc-1b4dca571aafa4f4bb9d.js.map"
     ],
     "app": [
-      "app-1831159d620374592d20.js",
+      "app-7b9bae5573acb7cf53c2.js",
       "build-js-styles.css",
-      "app-1831159d620374592d20.js.map",
+      "app-7b9bae5573acb7cf53c2.js.map",
       "build-js-styles.css.map"
     ],
     "path---tags-high-order-function": [
@@ -265,6 +285,10 @@
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
       "path---404-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---tags-anki": [
+      "path---tags-anki-b00d0055b7f5f154feea.js",
+      "path---tags-anki-b00d0055b7f5f154feea.js.map"
     ],
     "path---tags-functional-programming": [
       "path---tags-functional-programming-6ae7219d9703b131869c.js",
