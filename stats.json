@@ -69,8 +69,8 @@
       "path---2018-enable-comments-for-gatsby-blog-6f1b3086a51dc32151a3.js.map"
     ],
     "path---tags": [
-      "path---tags-ea9fbdabc66756464802.js",
-      "path---tags-ea9fbdabc66756464802.js.map"
+      "path---tags-0e3a260cee9a4e5ed816.js",
+      "path---tags-0e3a260cee9a4e5ed816.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
@@ -83,6 +83,10 @@
     "path---tags-monad": [
       "path---tags-monad-de22e68996ca2ad1e797.js",
       "path---tags-monad-de22e68996ca2ad1e797.js.map"
+    ],
+    "path---tags-设计": [
+      "path---tags-设计-89594a5dbc66e04fe615.js",
+      "path---tags-设计-89594a5dbc66e04fe615.js.map"
     ],
     "path---2016-function-covariant-contravariant": [
       "path---2016-function-covariant-contravariant-9adf157a077ceb68e9f8.js",
@@ -145,12 +149,16 @@
       "path---tags-microservices-d0d8dab4bd96a67dfe6c.js.map"
     ],
     "path---index": [
-      "path---index-e52a3dfd4d431c0d2e17.js",
-      "path---index-e52a3dfd4d431c0d2e17.js.map"
+      "path---index-83176482aa2f42be9f94.js",
+      "path---index-83176482aa2f42be9f94.js.map"
     ],
     "path---tags-aop": [
       "path---tags-aop-e8b5d3a893ac14ff1e45.js",
       "path---tags-aop-e8b5d3a893ac14ff1e45.js.map"
+    ],
+    "path---tags-状态机": [
+      "path---tags-状态机-d8c10d6f9920ae6f0ed9.js",
+      "path---tags-状态机-d8c10d6f9920ae6f0ed9.js.map"
     ],
     "path---2013-fold": [
       "path---2013-fold-a9dbcddaee5854cbd96c.js",
@@ -161,12 +169,12 @@
       "path---2015-scala-trouble-shooting-25206b9ed7366ebd4d40.js.map"
     ],
     "path---tags-微服务": [
-      "path---tags-微服务-22befef0a466edd0cd13.js",
-      "path---tags-微服务-22befef0a466edd0cd13.js.map"
+      "path---tags-微服务-6ada6f7b618b04e9d2dc.js",
+      "path---tags-微服务-6ada6f7b618b04e9d2dc.js.map"
     ],
     "path---2": [
-      "path---2-7b37a8ae978e5335b5cd.js",
-      "path---2-7b37a8ae978e5335b5cd.js.map"
+      "path---2-aaa04d4f698719d27981.js",
+      "path---2-aaa04d4f698719d27981.js.map"
     ],
     "path---tags-http-2": [
       "path---tags-http-2-17f7d57e63eb768e8848.js",
@@ -197,8 +205,8 @@
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---3": [
-      "path---3-12baebfdc0ab68f484ae.js",
-      "path---3-12baebfdc0ab68f484ae.js.map"
+      "path---3-127047fa04a73ee6f2f4.js",
+      "path---3-127047fa04a73ee6f2f4.js.map"
     ],
     "path---2020-how-to-build-a-serverless-wechat-mini-program": [
       "path---2020-how-to-build-a-serverless-wechat-mini-program-e686aabc763585648698.js",
@@ -248,10 +256,14 @@
       "path---2018-how-to-read-rust-api-doc-1b4dca571aafa4f4bb9d.js",
       "path---2018-how-to-read-rust-api-doc-1b4dca571aafa4f4bb9d.js.map"
     ],
+    "path---2020-src-pages-2020": [
+      "path---2020-src-pages-2020-cf6715382db1de651e05.js",
+      "path---2020-src-pages-2020-cf6715382db1de651e05.js.map"
+    ],
     "app": [
-      "app-7b9bae5573acb7cf53c2.js",
+      "app-4d80395a4e126ae95318.js",
       "build-js-styles.css",
-      "app-7b9bae5573acb7cf53c2.js.map",
+      "app-4d80395a4e126ae95318.js.map",
       "build-js-styles.css.map"
     ],
     "path---tags-high-order-function": [
